@@ -112,11 +112,3 @@ Other modules: 25 network repair actions (Winsock/TCP-IP reset, DNS flush, proxy
 **Requirements**: Windows 10/11 (Chinese system, GBK/936 encoding). Run as Administrator for repair functions.
 
 **Note**: Repair operations modify system network configuration. Create a restore point first (menu `[01]`) if unsure. Some fixes require a reboot to take full effect.
-
----
-
-## AI 使用声明 / AI Usage Disclosure
-
-- 本作品由 **AI 辅助生成**（生成时间：**2026-09-16**），发布者：**mowenqwq**
-- 仅供学习与技术参考使用；发布、引用或投入使用前，请人工核实关键信息与操作安全性
-- This work is **AI-assisted content** (generated on **2026-09-16**), published by **mowenqwq**. For learning and technical reference only — please manually verify critical information before publishing, citing, or deploying it.
