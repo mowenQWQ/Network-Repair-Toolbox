@@ -1,6 +1,10 @@
-# 批处理文件必须保持 CRLF 行尾
-# （GBK 编码 + LF 行尾的组合在 Windows cmd 下有解析风险）
-*.bat text eol=crlf
+# 批处理文件按二进制原样存储，禁止任何行尾转换
+# 理由：本工具箱是 GBK 编码的中文 bat，
+#   ① cmd 对 CRLF 的兼容性最好，LF 行尾有解析风险；
+#   ② 用 `-text` 而非 `text eol=crlf`：后者只在 checkout 时转 CRLF，
+#      仓库内仍存 LF，导致"直接下载 raw 文件"的用户拿到 LF 版本。
+#      `-text` 让仓库内存储就是 CRLF，任何下载途径（clone / raw / zip）都一致。
+*.bat -text
 
 # 文档类保持 LF
 *.md   text eol=lf
