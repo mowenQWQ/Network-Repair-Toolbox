@@ -1,0 +1,8 @@
+# 批处理文件必须保持 CRLF 行尾
+# （GBK 编码 + LF 行尾的组合在 Windows cmd 下有解析风险）
+*.bat text eol=crlf
+
+# 文档类保持 LF
+*.md   text eol=lf
+LICENSE text eol=lf
+.gitattributes text eol=lf
